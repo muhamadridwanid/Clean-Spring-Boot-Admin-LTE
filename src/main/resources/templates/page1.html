@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base}">
+
+<head>
+    <title>Page 1</title>
+
+    <!--CSS Page Here-->
+
+</head>
+
+
+<body>
+<div>
+    <!--Content header-->
+    <th:block layout:fragment="contentheader">
+        <h1>Ini Halaman Satu
+            <small>Satu</small>
+        </h1>
+
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+            <li class="active">Here</li>
+        </ol>
+
+    </th:block>
+
+    <!--Content-->
+    <th:block layout:fragment="content">
+        Hallo Dunia
+    </th:block>
+
+    <!-- Page Javascript-->
+    <th:block layout:fragment="pagejs">
+
+    </th:block>
+
+</div>
+</body>
+</html>
